@@ -19,7 +19,7 @@ struct ITDAstartdiscription2: View {
         VStack(spacing: 0) {
             
             Text(titleText)
-                .font(.custom("42dotSans-Bold", size: 21))
+                .font(.custom("Pretendard-Bold", size: 21))
                 .padding(.horizontal, 24)
                 .padding(.top,191)
                 
@@ -27,14 +27,14 @@ struct ITDAstartdiscription2: View {
             Spacer().frame(height: 35)
             
             Text(descriptionText)
-                .font(.custom("42dotSans-Regular", size: 16))
+                .font(.custom("Pretendard-Regular", size: 16))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
             
             Spacer()
             
             Text(buttomText)
-                .font(.custom("43dotSans-Regular", size: 13))
+                .font(.custom("Pretendard-Regular", size: 13))
                 .multilineTextAlignment(.center)
                 .foregroundStyle(.gray)
         }
