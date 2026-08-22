@@ -21,7 +21,7 @@ struct ITDAstartdiscription: View {
             Text(titleText)
                 .font(.custom("42dotSans-Bold", size: 21))
                 .padding(.horizontal, 24)
-                .padding(.top, 191)
+                
         
             Spacer().frame(height: 35)
             
