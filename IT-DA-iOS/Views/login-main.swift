@@ -7,6 +7,7 @@ struct ITDAloginmain: View {
     let NextButton = "로그인"
     let question = "IT-DA가 처음이신가요?"
     let ITDAjointhemembership = "회원가입하기"
+    let buttomText = "소셜 로그인으로 간편하게 가입하고 시작하세요"
     var isDisabled = false
     var body: some View {
         VStack(spacing: 0) {
@@ -17,12 +18,12 @@ struct ITDAloginmain: View {
                 .padding(.top, 45)
 
             ITDAstartdiscription()
-                .padding(.top, 46)
+                .padding(.top, 43.5)
 
         }
             Text(id)
                 .frame(maxWidth:.infinity,alignment:.leading)
-                .padding(.top, 69)
+                .padding(.top, 66.5)
                 .padding(.leading, 57)
                 .foregroundStyle(Color("place"))
                 .font(.custom("Pretendard-Light", size: 14))
@@ -34,7 +35,7 @@ struct ITDAloginmain: View {
             
             Text(pw)
                 .frame(maxWidth:.infinity,alignment:.leading)
-                .padding(.top, 23)
+                .padding(.top, 19.5)
                 .padding(.leading, 57)
                 .foregroundStyle(Color("place"))
                 .font(.custom("Pretendard-Light", size: 14))
@@ -44,7 +45,7 @@ struct ITDAloginmain: View {
                 .frame(width: 295, height: 1)
                 .padding(.top, 3.5)
         
-        ZStack{
+        HStack{
             Button{
                 print("로그인버튼클릭")
             } label: {
@@ -59,26 +60,33 @@ struct ITDAloginmain: View {
             }
                     .padding(.top, 27.5)
         }
-        ZStack{
+        HStack{
             Text(question)
                 .font(.custom("Pretendard-Regular",size : 13))
                 .foregroundStyle(Color("place"))
-                .frame(maxWidth:.infinity,alignment:.leading)
                 .padding(.leading, 101)
                 .padding(.top, 15)
             Text(ITDAjointhemembership).underline()
                 .font(.custom("Pretendard-Medium",size : 13,))
                 .foregroundStyle(Color("border"))
-                .frame(maxWidth:.infinity,alignment:.trailing)
                 .padding(.trailing, 101)
                 .padding(.top, 15)
         }
-                
-             
-        
-        
-            Spacer()
-            
+        HStack{
+            Image("apple")
+                .frame(maxWidth:.infinity,alignment:.leading)
+                .padding(.leading, 122.5)
+                .padding(.top,81.5)
+            Image("google")
+                .padding(.horizontal,8.5)
+                .padding(.top,81.5)
+            Image("kakao")
+                .frame(maxWidth: .infinity,alignment:.trailing)
+                .padding(.trailing,122.5)
+                .padding(.top,81.5)
+        }
+       
+       Spacer()
     }
 }
 

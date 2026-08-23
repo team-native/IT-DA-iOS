@@ -16,12 +16,11 @@ struct ITDAstartdiscription: View {
     let buttomText = "소셜 로그인으로 간편하게 가입하고 시작하세요"
     
     var body: some View {
-        VStack(spacing: 0) {
+        VStack {
             
             Text(titleText)
                 .font(.custom("Pretendard-Bold", size: 21))
                 .padding(.horizontal, 24)
-            
             
             Spacer().frame(height: 35)
             
@@ -30,11 +29,11 @@ struct ITDAstartdiscription: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
             
+            
         }
-        
     }
-    
 }
+    
 
 #Preview {
     ITDAstartdiscription()
