@@ -15,35 +15,35 @@ struct ITDAloginmain: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 100, height: 100)
-                .padding(.top, 45)
-
-            ITDAstartdiscription()
-                .padding(.top, 43.5)
-
-        }
-            Text(id)
-                .frame(maxWidth:.infinity,alignment:.leading)
-                .padding(.top, 66.5)
-                .padding(.leading, 57)
-                .foregroundStyle(Color("place"))
-                .font(.custom("Pretendard-Light", size: 14))
-
-            Image("Line 2")
-                .resizable()
-                .frame(width: 295 , height: 1)
-                .padding(.top, 3.5)
+                .padding(.top, 41.5)
             
-            Text(pw)
-                .frame(maxWidth:.infinity,alignment:.leading)
-                .padding(.top, 19.5)
-                .padding(.leading, 57)
-                .foregroundStyle(Color("place"))
-                .font(.custom("Pretendard-Light", size: 14))
+            ITDAstartdiscription()
+                .padding(.top, 42.5)
+            
+        }
+        Text(id)
+            .frame(maxWidth:.infinity,alignment:.leading)
+            .padding(.top, 43.5)
+            .padding(.leading, 57)
+            .foregroundStyle(Color("place"))
+            .font(.custom("Pretendard-Light", size: 14))
         
-            Image("Line 2")
-                .resizable()
-                .frame(width: 295, height: 1)
-                .padding(.top, 3.5)
+        Image("Line 2")
+            .resizable()
+            .frame(width: 295 , height: 1)
+            .padding(.top, 3.5)
+        
+        Text(pw)
+            .frame(maxWidth:.infinity,alignment:.leading)
+            .padding(.top, 19.5)
+            .padding(.leading, 57)
+            .foregroundStyle(Color("place"))
+            .font(.custom("Pretendard-Light", size: 14))
+        
+        Image("Line 2")
+            .resizable()
+            .frame(width: 295, height: 1)
+            .padding(.top, 3.5)
         
         HStack{
             Button{
@@ -58,7 +58,7 @@ struct ITDAloginmain: View {
                     .background(isDisabled ? Color("main"): Color("dim"))
                     .clipShape(RoundedRectangle(cornerRadius: 10000))
             }
-                    .padding(.top, 27.5)
+            .padding(.top, 27.5)
         }
         HStack{
             Text(question)
@@ -75,18 +75,27 @@ struct ITDAloginmain: View {
         HStack{
             Image("apple")
                 .frame(maxWidth:.infinity,alignment:.leading)
-                .padding(.leading, 122.5)
-                .padding(.top,81.5)
+                .padding(.leading, 121.5)
             Image("google")
-                .padding(.horizontal,8.5)
-                .padding(.top,81.5)
+                .padding(.horizontal,7.5)
             Image("kakao")
                 .frame(maxWidth: .infinity,alignment:.trailing)
-                .padding(.trailing,122.5)
-                .padding(.top,81.5)
+                .padding(.trailing,121.5)
         }
+        .padding(.top, 81.5)
+
+        
+        
+        Text(buttomText)
+            .font(.custom("Pretendard-Regular", size: 13))
+            .multilineTextAlignment(.center)
+            .foregroundStyle(.gray)
+            .padding(.top, 26.5)
+            .padding(.bottom, 46.5)
+            .padding(.horizontal, 79.5)
        
-       Spacer()
+        Spacer()
+        
     }
 }
 
