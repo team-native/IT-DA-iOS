@@ -5,6 +5,8 @@ struct ITDAloginmain: View {
     let id = "아이디"
     let pw = "비밀번호"
     let NextButton = "로그인"
+    let question = "IT-DA가 처음이신가요?"
+    let ITDAjointhemembership = "회원가입하기"
     var isDisabled = false
     var body: some View {
         VStack(spacing: 0) {
@@ -57,6 +59,21 @@ struct ITDAloginmain: View {
             }
                     .padding(.top, 27.5)
         }
+        ZStack{
+            Text(question)
+                .font(.custom("Pretendard-Regular",size : 13))
+                .foregroundStyle(Color("place"))
+                .frame(maxWidth:.infinity,alignment:.leading)
+                .padding(.leading, 101)
+                .padding(.top, 15)
+            Text(ITDAjointhemembership).underline()
+                .font(.custom("Pretendard-Medium",size : 13,))
+                .foregroundStyle(Color("border"))
+                .frame(maxWidth:.infinity,alignment:.trailing)
+                .padding(.trailing, 101)
+                .padding(.top, 15)
+        }
+                
              
         
         
