@@ -2,13 +2,13 @@
 import SwiftUI
 
 struct ITDAloginmain: View {
-    let id = "아이디"
-    let pw = "비밀번호"
+    @State private var username = ""
+    @State private var password = ""
     let NextButton = "로그인"
     let question = "IT-DA가 처음이신가요?"
     let ITDAjointhemembership = "회원가입하기"
     let buttomText = "소셜 로그인으로 간편하게 가입하고 시작하세요"
-    var isDisabled = false
+    var isDisabled = true
     var body: some View {
         VStack(spacing: 0) {
             Image("IT-DA logo")
@@ -16,12 +16,13 @@ struct ITDAloginmain: View {
                 .scaledToFit()
                 .frame(width: 100, height: 100)
                 .padding(.top, 41.5)
+                .padding(.horizontal,125)
             
             ITDAstartdiscription()
                 .padding(.top, 42.5)
             
         }
-        Text(id)
+        TextField("아이디", text: $username)
             .frame(maxWidth:.infinity,alignment:.leading)
             .padding(.top, 43.5)
             .padding(.leading, 57)
@@ -33,7 +34,7 @@ struct ITDAloginmain: View {
             .frame(width: 295 , height: 1)
             .padding(.top, 3.5)
         
-        Text(pw)
+        TextField("비밀번호", text: $password )
             .frame(maxWidth:.infinity,alignment:.leading)
             .padding(.top, 19.5)
             .padding(.leading, 57)
@@ -55,7 +56,7 @@ struct ITDAloginmain: View {
                     .frame(maxWidth:.infinity)
                     .frame(height: 45)
                     .frame(width: 322)
-                    .background(isDisabled ? Color("main"): Color("dim"))
+                    .background(isDisabled ? Color("dim"): Color("main"))
                     .clipShape(RoundedRectangle(cornerRadius: 10000))
             }
             .padding(.top, 27.5)
