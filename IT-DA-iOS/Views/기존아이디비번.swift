@@ -10,6 +10,7 @@ import SwiftUI
 struct ITDALoginPassword: View {
     let ITDAjointhemembership = "회원 가입"
     let ITDAaccountcreation = "계정 만들기"
+    let ITDAdetails = "서비스를 이용하기 위해 기본 정보를 입력해 주세요."
     @State private var id = ""
     @State private var password = ""
     @State private var confirm = ""
@@ -27,11 +28,20 @@ struct ITDALoginPassword: View {
                 .padding(.top, 11.5)
         }
             Text(ITDAaccountcreation)
-            .font(.custom("Pretendard-semiBold", size: 21))
-            .foregroundStyle(Color("main"))
+                .font(.custom("Pretendard-semiBold", size: 21))
+                .foregroundStyle(Color("main"))
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.leading, 28.5)
+                .padding(.top, 28.5)
+        
+            Text(ITDAdetails)
+            .font(.custom("Pretendard-Bold", size: 13))
+            .foregroundStyle(Color("sub"))
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.leading, 28.5)
-            .padding(.top, 28.5)
+            .padding(.top, 8.5)
+    
+            
     }
 }
 #Preview {
