@@ -26,26 +26,33 @@ struct ITDALoginPassword: View {
                 .resizable()
                 .frame(width: 402, height: 2)
                 .padding(.top, 11.5)
-        }
+            
             Text(ITDAaccountcreation)
                 .font(.custom("Pretendard-semiBold", size: 21))
                 .foregroundStyle(Color("main"))
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 28.5)
                 .padding(.top, 28.5)
-        
+            
             Text(ITDAdetails)
                 .font(.custom("Pretendard-Bold", size: 13))
                 .foregroundStyle(Color("sub"))
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 28.5)
                 .padding(.top, 8.5)
-        
-        textField(title: "아이디", placeholder: "6~15글자", text: $id)
-            .padding(.horizontal, 26.5)
-            .padding(.top, 19.5)
-        
             
+            VStack(spacing:0)
+            {
+                textField(title: "아이디", placeholder: "6~15글자", text: $id)
+                textField(title: "비밀번호", placeholder: "8~20글자", text: $password, isSecure: true)
+                    .padding(.top, 19)
+                textField(title: "비밀번호 확인", placeholder: "8~20글자", text: $confirm, isSecure: true)
+                    .padding(.top, 19)
+            }
+            .padding(.horizontal, 26)
+            .padding(.top, 19.5)
+        }
+
         
             
         
