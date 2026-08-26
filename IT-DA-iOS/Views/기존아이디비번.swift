@@ -35,11 +35,21 @@ struct ITDALoginPassword: View {
                 .padding(.top, 28.5)
         
             Text(ITDAdetails)
-            .font(.custom("Pretendard-Bold", size: 13))
-            .foregroundStyle(Color("sub"))
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.leading, 28.5)
-            .padding(.top, 8.5)
+                .font(.custom("Pretendard-Bold", size: 13))
+                .foregroundStyle(Color("sub"))
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.leading, 28.5)
+                .padding(.top, 8.5)
+        
+        textField(title: "아이디", placeholder: "6~15글자", text: $id)
+            .padding(.leading, 26.5)
+            .padding(.trailing, 26.5)
+            .padding(.top, 19.5)
+        
+            
+        
+        
+            
     
             
     }
