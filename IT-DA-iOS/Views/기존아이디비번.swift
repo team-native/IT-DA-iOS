@@ -42,9 +42,10 @@ struct ITDALoginPassword: View {
                 .padding(.top, 8.5)
         
         textField(title: "아이디", placeholder: "6~15글자", text: $id)
-            .padding(.leading, 26.5)
-            .padding(.trailing, 26.5)
+            .padding(.horizontal, 26.5)
             .padding(.top, 19.5)
+        
+            
         
             
         
