@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ITDALoginPassword: View {
     let ITDAjointhemembership = "회원 가입"
+    let ITDAaccountcreation = "계정 만들기"
     @State private var id = ""
     @State private var password = ""
     @State private var confirm = ""
@@ -18,13 +19,19 @@ struct ITDALoginPassword: View {
             Text(ITDAjointhemembership)
                 .font(.custom("Pretendard-Bold", size: 23))
                 .foregroundStyle(Color("text"))
+                .padding(.top,89.5)
             
             Image("Line 1")
                 .resizable()
                 .frame(width: 402, height: 2)
                 .padding(.top, 11.5)
-          
         }
+            Text(ITDAaccountcreation)
+            .font(.custom("Pretendard-semiBold", size: 21))
+            .foregroundStyle(Color("main"))
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.leading, 28.5)
+            .padding(.top, 28.5)
     }
 }
 #Preview {
