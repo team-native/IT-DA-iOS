@@ -11,16 +11,18 @@ struct ITDALoginPassword: View {
     let ITDAjointhemembership = "회원 가입"
     let ITDAaccountcreation = "계정 만들기"
     let ITDAdetails = "서비스를 이용하기 위해 기본 정보를 입력해 주세요."
+    
     @State private var id = ""
     @State private var password = ""
     @State private var confirm = ""
+    
 
     var body: some View {
         VStack(spacing: 0){
             Text(ITDAjointhemembership)
                 .font(.custom("Pretendard-Bold", size: 23))
                 .foregroundStyle(Color("text"))
-                .padding(.top,89.5)
+                .padding(.top,26.5)
             
             Image("Line 1")
                 .resizable()
@@ -52,16 +54,14 @@ struct ITDALoginPassword: View {
             .padding(.horizontal, 26)
             .padding(.top, 19.5)
         }
-
-        
+        Spacer().frame(height: 297)
             
-        
-        
-            
-    
+        ITDAPrimaryButton(title: "계정만들기"){}
+            .padding(.horizontal, 26.5)
+            .padding(.bottom, 9.5)
             
     }
 }
 #Preview {
-ITDALoginPassword()
+    ITDALoginPassword()
 }
