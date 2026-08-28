@@ -14,7 +14,7 @@ struct ITDALoginPassword1: View {
     
     @State private var id = ""
     @State private var password = ""
-    @State private var confirm = ""
+    @State private var choice = ""
     
 
     var body: some View {
@@ -48,7 +48,8 @@ struct ITDALoginPassword1: View {
                 textField(title: "이름", placeholder: "예: 홍길동, 가나다, 하치와레", text: $id)
                 Dropdown(text: "관심 분야", value: "Back-End")
                     .padding(.top, 19)
-                
+                textField(title: "기술 스텍", placeholder: "예: Python, Figma, Swift", text: $choice)
+                    .padding(.top, 19)
             }
             .padding(.horizontal, 26)
             .padding(.top, 19.5)
