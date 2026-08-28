@@ -17,7 +17,7 @@ struct ITDAaddInformation: View {
         VStack(spacing: 0){
                 Text(AddInformation)
                     .font(.custom("Pretendard-Bold", size: 24))
-                    .padding(.top, 26.5)
+                    .padding(.top, 30)
                 Image("Line 1")
                     .resizable()
                     .frame(width: 402, height: 2)
@@ -25,7 +25,7 @@ struct ITDAaddInformation: View {
                 Text(AddInformation)
                     .font(.custom("Pretendard-Bold", size: 24))
                     .foregroundStyle(Color("text"))
-                    .padding(.top, 38)
+                    .padding(.top, 26.5)
                     .padding(.leading, 26.5)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 Text(details)
@@ -40,16 +40,23 @@ struct ITDAaddInformation: View {
             VStack(spacing: 0){
                 textField(title: "이름", placeholder: "예: 홍길동, 가나다, 하치와레", text: $name)
                 ITDASelectField(title: "관심 분야", value: "Back-End"){}
-                    .padding(.top, 14.5)
+                    .padding(.top, 11.5)
                 textField(title: "기술 스택", placeholder: "예: Python, Figma, Swift", text: $techinque)
-                    .padding(.top, 14.5)
+                    .padding(.top, 11.5)
                 ITDASelectField(title: "기수", value: "10기"){}
-                    .padding(.top, 14.5)
+                    .padding(.top, 11.5)
                 textField(title: "학과", placeholder: "SW과", text: $confirm)
-                    .padding(.top, 14.5)
+                    .padding(.top, 11.5)
             }
             .padding(.horizontal, 26.5)
+        
+        VStack(spacing: 0){
+            ITDAPrimaryButton(title: "계정 만들기"){}
+                .padding(.top, 126.5)
+                .padding(.bottom, 20.5)
+                .padding(.horizontal, 26.5)
             
+        }
     }
 }
 
