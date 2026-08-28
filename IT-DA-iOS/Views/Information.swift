@@ -41,7 +41,7 @@ struct ITDAaddInformation: View {
                 ITDASelectField(title: "관심 분야", value: "Back-End"){}
                 textField(title: "기술 스택", placeholder: "예: Python, Figma, Swift", text: $techinque)
                 ITDASelectField(title: "기수", value: "10기"){}
-                
+                textField(title: "학과", placeholder: "SW과", text: $confirm)
             }
     }
 }
