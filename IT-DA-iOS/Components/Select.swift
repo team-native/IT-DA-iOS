@@ -36,7 +36,7 @@ struct ITDASelectField: View {
                 .background(.white)
                 .overlay {
                     RoundedRectangle(cornerRadius: 9)
-                        .stroke(Color("border"), lineWidth: 1)
+                        .stroke(Color("place"), lineWidth: 1)
                 }
             }
             .buttonStyle(.plain)
