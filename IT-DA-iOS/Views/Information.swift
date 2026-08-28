@@ -46,10 +46,9 @@ struct ITDALoginPassword1: View {
             VStack(spacing:0)
             {
                 textField(title: "이름", placeholder: "예: 홍길동, 가나다, 하치와레", text: $id)
-                (textField(title: "관심분야", placeholder: "8~20글자", text: $password, isSecure: true))
+                Dropdown(text: "관심 분야", value: "Back-End")
                     .padding(.top, 19)
-                textField(title: "비밀번호 확인", placeholder: "8~20글자", text: $confirm, isSecure: true)
-                    .padding(.top, 19)
+                
             }
             .padding(.horizontal, 26)
             .padding(.top, 19.5)
