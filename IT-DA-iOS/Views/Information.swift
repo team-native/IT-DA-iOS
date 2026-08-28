@@ -40,6 +40,7 @@ struct ITDAaddInformation: View {
                 textField(title: "이름", placeholder: "예: 홍길동, 가나다, 하치와레", text: $name)
                 ITDASelectField(title: "관심 분야", value: "Back-End"){}
                 textField(title: "기술 스택", placeholder: "예: Python, Figma, Swift", text: $techinque)
+                ITDASelectField(title: "기수", value: "10기"){}
                 
             }
     }
