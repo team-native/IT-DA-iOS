@@ -34,8 +34,12 @@ struct ITDAaddInformation: View {
                     .padding(.top, 8.5)
                     .padding(.leading,26.5)
             }
-       
+        Spacer().frame(height: 29.5)
         
+            VStack(spacing: 0){
+                textField(title: "이름", placeholder: "예: 홍길동, 가나다, 하치와레", text: $name)
+                
+            }
     }
 }
 
