@@ -1,16 +1,16 @@
 //
-//  기존아이디비번.swift
+//  Information.swift
 //  IT-DA-iOS
 //
-//  Created by 안율 on 8/25/26.
+//  Created by 안율 on 8/28/26.
 //
 
 import SwiftUI
 
-struct ITDALoginPassword: View {
-    let ITDAjointhemembership = "회원 가입"
-    let ITDAaccountcreation = "계정 만들기"
-    let ITDAdetails = "서비스를 이용하기 위해 기본 정보를 입력해 주세요."
+struct ITDALoginPassword1: View {
+    let ITDAAddInformation = "추가 정보"
+    let ITDAAddInformationEnter = "추가 정보 입력"
+    let ITDAdetails = "매칭 품질을 높이기 위해 몇 가지 정보를 입력해 주세요"
     
     @State private var id = ""
     @State private var password = ""
@@ -19,7 +19,7 @@ struct ITDALoginPassword: View {
 
     var body: some View {
         VStack(spacing: 0){
-            Text(ITDAjointhemembership)
+            Text(ITDAAddInformation)
                 .font(.custom("Pretendard-Bold", size: 23))
                 .foregroundStyle(Color("text"))
                 .padding(.top,26.5)
@@ -29,7 +29,7 @@ struct ITDALoginPassword: View {
                 .frame(width: 402, height: 2)
                 .padding(.top, 11.5)
             
-            Text(ITDAaccountcreation)
+            Text(ITDAAddInformationEnter)
                 .font(.custom("Pretendard-semiBold", size: 21))
                 .foregroundStyle(Color("main"))
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -45,8 +45,8 @@ struct ITDALoginPassword: View {
             
             VStack(spacing:0)
             {
-                textField(title: "아이디", placeholder: "6~15글자", text: $id)
-                (textField(title: "비밀번호", placeholder: "8~20글자", text: $password, isSecure: true))
+                textField(title: "이름", placeholder: "예: 홍길동, 가나다, 하치와레", text: $id)
+                (textField(title: "관심분야", placeholder: "8~20글자", text: $password, isSecure: true))
                     .padding(.top, 19)
                 textField(title: "비밀번호 확인", placeholder: "8~20글자", text: $confirm, isSecure: true)
                     .padding(.top, 19)
@@ -63,5 +63,6 @@ struct ITDALoginPassword: View {
     }
 }
 #Preview {
-    ITDALoginPassword()
+    ITDALoginPassword1()
 }
+
