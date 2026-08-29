@@ -8,7 +8,7 @@ struct Dropdown: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 9) {
             Text(text)
-                .font(.custom("Pretendard-Bold", size: 15))
+                .font(.custom("Pretendard-SemiBold", size: 16))
                 .foregroundStyle(Color("text"))
 
             Button(action: tap) {
