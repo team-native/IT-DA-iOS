@@ -1,0 +1,20 @@
+//
+//  Home-Screen.swift
+//  IT-DA-iOS
+//
+//  Created by 안율 on 8/30/26.
+//
+
+import SwiftUI
+struct HomeScreen : View{
+    let chip1 = ""
+    let chip2 = ""
+    let chip3 =  ""
+    var body: some View{
+        ITDAProjectCard(title: "AI기반 학습 플래너 [0부0부]", subtitle: "백앤드 개발자 1명 모집", chip1: "Back-End")
+            .padding(.horizontal, 26.5)
+    }
+}
+#Preview{
+    HomeScreen()
+}

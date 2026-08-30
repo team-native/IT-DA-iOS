@@ -39,7 +39,7 @@ struct ITDAProjectCard: View {
             }
 
             Text(subtitle)
-                .font(.custom("Pretendard-SemiBold", size: 17))
+                .font(.custom("Pretendard-Regular", size: 17))
                 .foregroundStyle(Color("sub"))
 
             if chip1 != "" || chip2 != "" || chip3 != "" {
@@ -62,8 +62,9 @@ struct ITDAProjectCard: View {
                 Text(meta)
                 Spacer()
                 Text(trailingText)
+                    .underline()
             }
-            .font(.custom("Pretendard-Medium", size: 12))
+            .font(.custom("Pretendard-Regular", size: 12))
             .foregroundStyle(Color("sub"))
         }
         .padding(.horizontal, 18)
