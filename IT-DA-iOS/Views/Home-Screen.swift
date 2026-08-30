@@ -7,10 +7,17 @@
 
 import SwiftUI
 struct HomeScreen : View{
+    let upexplanation = "Home"
     let chip1 = ""
     let chip2 = ""
     let chip3 =  ""
+    
     var body: some View{
+        Text(upexplanation)
+            .font(.custom("Pretendard-Bold", size: 23))
+        Image("Line 1")
+            .padding(.top, 18.5)
+        
         ITDAProjectCard(title: "AI기반 학습 플래너 [0부0부]", subtitle: "백앤드 개발자 1명 모집", chip1: "Back-End")
             .padding(.horizontal, 26.5)
     }
