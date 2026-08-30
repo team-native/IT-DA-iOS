@@ -27,8 +27,17 @@ struct HomeScreen : View{
         ITDAProjectCard(
             title: "하치와레 키우기 [하키]",
             subtitle: "프론트엔드 개발자 2명 모집",
-            chip2: "Back-End"
+            chip1: "Back-End"
         )
+        .padding(.top, 16.5)
+        .padding(.horizontal, 26.5)
+        
+        ITDAProjectCard(
+            title: "닮은 포켓몬 검사 [포켓몬백]",
+            subtitle: "iOS 개발자 한명ㆍ디자이너 1명 모집",
+            status: "마감 입박",
+            chip2: "iOS",
+            chip3: "Design")
         .padding(.top, 16.5)
         .padding(.horizontal, 26.5)
     }
