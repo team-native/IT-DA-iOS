@@ -23,12 +23,13 @@ struct Signal : View {
             .frame(maxWidth:.infinity, alignment: .leading)
             .padding(.leading, 28.5)
             .padding(.top, 20.5)
-        Text(Signalforms)
-            .font(.custom("Pretendard-Regular",size: 15))
-            .foregroundStyle(Color("place"))
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.leading, 28.5)
-            .padding(.top, 14.5)
+        
+        Dropdown(
+            text: "알림 유형",
+            value: "전체"
+        )
+        .padding(.horizontal,26.5)
+        .padding(.top, 14.5)
         
     }
 

@@ -9,7 +9,7 @@ struct Dropdown: View {
         VStack(alignment: .leading, spacing: 9) {
             Text(text)
                 .font(.custom("Pretendard-SemiBold", size: 16))
-                .foregroundStyle(Color("text"))
+                .foregroundStyle(Color("place"))
 
             Button(action: tap) {
                 HStack {
@@ -24,7 +24,7 @@ struct Dropdown: View {
                         .frame(width: 18, height: 18)
                 }
                 .font(.custom("Pretendard-Regular", size: 15))
-                .foregroundStyle(Color("sub"))
+                .foregroundStyle(Color("text"))
                 .padding(.horizontal, 15)
                 .frame(height: 44)
                 .overlay {
