@@ -8,6 +8,8 @@
 import SwiftUI
 struct HomeScreen : View{
     let upexplanation = "Home"
+    let joinproject = "참여 중인 프로젝트"
+    let alarmcheck = "알림 요약ㆍ확인"
     let chip1 = ""
     let chip2 = ""
     let chip3 =  ""
@@ -40,6 +42,14 @@ struct HomeScreen : View{
             chip3: "Design")
         .padding(.top, 16.5)
         .padding(.horizontal, 26.5)
+        
+        VStack(spacing: 0){
+            Text(joinproject)
+                .font(.custom("Pretendard-Bold",size: 21))
+                .frame(maxWidth:.infinity,alignment:.leading)
+                .padding(.top,26.5)
+                .padding(.leading, 26.5)
+        }
     }
 }
 #Preview{
