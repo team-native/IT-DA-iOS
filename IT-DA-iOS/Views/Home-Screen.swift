@@ -50,6 +50,17 @@ struct HomeScreen : View{
                 .padding(.top,26.5)
                 .padding(.leading, 26.5)
         }
+        ITDAProjectCard(
+            title: "사랑을 이어주는 앱 [닭발]",
+            subtitle: "내 역할: iOS 개발",
+            status: "진행중"
+            )
+        .padding(.horizontal, 26.5)
+        .padding(.top, 11.5)
+        
+        VStack(spacing: 0){
+            Text(alarmcheck)
+        }
     }
 }
 #Preview{
