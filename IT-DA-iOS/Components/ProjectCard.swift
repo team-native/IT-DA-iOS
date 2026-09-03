@@ -109,3 +109,5 @@ struct ITDAProjectCard_Previews: PreviewProvider {
         .background(.white)
     }
 }
+
+
