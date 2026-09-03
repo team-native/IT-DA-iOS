@@ -19,7 +19,7 @@ struct Signal : View {
                 showsBackButton: true,
                 trailingTitle: "전체 읽은 처리"
             )
-            .padding(.top, 5.5)
+            .padding(.top, 1)
         }
         Text(Signaltext)
             .font(.custom("Pretendard-SemiBold",size: 21))
@@ -44,14 +44,26 @@ struct Signal : View {
             )
             .padding(.top, 11.5)
             
-            SingalProjectCard(
-                title: "자원 결과 도착",
-                subtitle: "백엔드 개발자 1명이 팀에 합류했습니다.",
-                meta:"안 읽힘",
-                imagename: "ball",
-                time: "1시간 전"
-            )
-            .padding(.top, 10)
+            VStack(spacing:0){
+                SingalProjectCard(
+                    title: "자원 결과 도착",
+                    subtitle: "백엔드 개발자 1명이 팀에 합류했습니다.",
+                    meta:"안 읽힘",
+                    imagename: "ball",
+                    time: "1시간 전"
+                )
+                .padding(.top, 10)
+                
+                SingalProjectCard(
+                    title: "팀 맴버 합류",
+                    subtitle: "벡엔드 개발자 1명이 팀에 합류했습니다.",
+                    meta: "읽음",
+                    imagename: "check",
+                    time: "1시간 전"
+                )
+                .padding(.top, 10)
+            }
+            
         }
         .padding(.horizontal, 26.5)
     
