@@ -13,6 +13,7 @@ struct SingalProjectCard: View {
     var status: String = ""
     var meta: String = ""
     var imagename: String = ""
+    var time: String = ""
 
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
@@ -38,6 +39,9 @@ struct SingalProjectCard: View {
             HStack {
                 Image(imagename)
                 Text(meta)
+                Text(time)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+                    .padding(.trailing, 2.5)
                 
             }
             .font(.custom("Pretendard-medium", size: 8))
@@ -70,14 +74,16 @@ struct SingalProjectCard_Previews: PreviewProvider {
                     title: "새 프로젝트 추천",
                     subtitle: "나의 기술 스택과 일치하는 프로그렘이 등록되었습니다.",
                     meta: "안 읽음",
-                    imagename: "ball"
+                    imagename: "ball",
+                    time: "5 분전"
                 )
 
                 SingalProjectCard(
                     title: "자원 결과 도착",
                     subtitle: "백엔드 개발자 1명이 팀에 합류했습니다.",
                     meta:"안 읽힘",
-                    imagename: "ball"
+                    imagename: "ball",
+                    time: "1시간 전"
                 )
             }
             .padding(.horizontal, 26.5)
