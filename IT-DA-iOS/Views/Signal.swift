@@ -34,12 +34,21 @@ struct Signal : View {
         .padding(.horizontal,26.5)
         .padding(.top, 14.5)
         
-        ITDAProjectCard(
-            title: "새 프로젝트 추천",
-            subtitle: "나의 기술 스택과 일치하는 프로그램이 등록되었습니다.",
-        )
-        
-        
+        VStack(spacing:0){
+            SingalProjectCard(
+                title: "새 프로젝트 추천",
+                subtitle: "나의 기술 스택과 일치하는 프로그렘이 등록되었습니다.",
+                meta: "안 읽음",
+                imagename: "ball",
+                time: "5 분전"
+            )
+            .padding(.top, 11.5)
+            
+            
+            
+        }
+        .padding(.horizontal, 26.5)
+    
         
     }
 
