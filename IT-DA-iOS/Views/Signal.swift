@@ -44,8 +44,14 @@ struct Signal : View {
             )
             .padding(.top, 11.5)
             
-            
-            
+            SingalProjectCard(
+                title: "자원 결과 도착",
+                subtitle: "백엔드 개발자 1명이 팀에 합류했습니다.",
+                meta:"안 읽힘",
+                imagename: "ball",
+                time: "1시간 전"
+            )
+            .padding(.top, 10)
         }
         .padding(.horizontal, 26.5)
     
