@@ -44,9 +44,9 @@ struct SingalProjectCard: View {
                     .padding(.trailing, 2.5)
                 
             }
-            .font(.custom("Pretendard-medium", size: 8))
+            .font(.custom("Pretendard-Semibold", size: 10))
             .foregroundStyle(Color("sub"))
-            .padding(.top, 36.5)
+            .padding(.top, 34.5)
             
         }
         .padding(.horizontal, 18)
@@ -54,7 +54,7 @@ struct SingalProjectCard: View {
         .background(.white)
         .overlay {
             RoundedRectangle(cornerRadius: 9)
-                .stroke(Color("card"), lineWidth: 1)
+                .stroke(Color("main"), lineWidth: 1)
         }
     }
 }
@@ -62,7 +62,7 @@ struct SingalProjectCard: View {
 struct SingalProjectCard_Previews: PreviewProvider {
     static var previews: some View {
         VStack(spacing: 0) {
-            ITDANavigationBar(title: "Home")
+
 
             VStack(alignment: .leading, spacing: 22) {
                 Text("알림")

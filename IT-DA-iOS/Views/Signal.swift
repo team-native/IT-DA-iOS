@@ -9,9 +9,7 @@ import SwiftUI
 struct Signal : View {
     let Signaltext = "알림"
     let Signalforms = "알림 유형"
-    var chip1: String = ""
-    var chip2: String = ""
-    var chip3: String = ""
+
     var body : some View{
         VStack(spacing: 0){
             ITDANavigationBar(
@@ -19,13 +17,13 @@ struct Signal : View {
                 showsBackButton: true,
                 trailingTitle: "전체 읽은 처리"
             )
-            .padding(.top, 1)
+            .padding(.top, 57.5)
         }
         Text(Signaltext)
             .font(.custom("Pretendard-SemiBold",size: 21))
             .frame(maxWidth:.infinity, alignment: .leading)
             .padding(.leading, 28.5)
-            .padding(.top, 20.5)
+            .padding(.top, 11.5)
         
         Dropdown(
             text: "알림 유형",
@@ -52,7 +50,7 @@ struct Signal : View {
                     imagename: "ball",
                     time: "1시간 전"
                 )
-                .padding(.top, 10)
+                .padding(.top, 6.5)
                 
                 SingalProjectCard(
                     title: "팀 맴버 합류",
@@ -61,7 +59,16 @@ struct Signal : View {
                     imagename: "check",
                     time: "1시간 전"
                 )
-                .padding(.top, 10)
+                .padding(.top, 6.5)
+                
+                SingalProjectCard(
+                    title: "새 프로젝트 추천",
+                    subtitle:"관심 분야 추천 프로젝트가 새로 업데이트 되었습니다.",
+                    meta: "읽음",
+                    imagename: "check",
+                    time:"1시간 전"
+                )
+                .padding(.top,6.5)
             }
             
         }
