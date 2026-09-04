@@ -54,7 +54,7 @@ struct SingalProjectCard: View {
         .background(.white)
         .overlay {
             RoundedRectangle(cornerRadius: 9)
-                .stroke(Color("main"), lineWidth: 1)
+                .stroke(Color("dim"), lineWidth: 1)
         }
     }
 }
