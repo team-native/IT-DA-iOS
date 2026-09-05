@@ -46,11 +46,12 @@ struct SingalProjectCard: View {
             }
             .font(.custom("Pretendard-Semibold", size: 10))
             .foregroundStyle(Color("sub"))
-            .padding(.top, 34.5)
+            .padding(.top, 20.5)
             
         }
         .padding(.horizontal, 18)
-        .padding(.vertical, 18)
+        .padding(.top,11.5)
+        .padding(.bottom,9.5)
         .background(.white)
         .overlay {
             RoundedRectangle(cornerRadius: 9)

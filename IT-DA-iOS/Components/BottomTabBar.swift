@@ -28,16 +28,17 @@ struct ITDABottomTabBar: View {
                         Image("home")
                             .resizable()
                             .renderingMode(.template)
-                            .foregroundStyle(selectedTab == .home ? Color("main") : Color("sub"))
+                            .foregroundStyle(selectedTab == .home ? Color("sub") : Color("main"))
                             .scaledToFit()
                             .frame(width: 20, height: 20)
 
                         Text("홈")
                             .font(.custom("Pretendard-Medium", size: 10))
-                            .foregroundStyle(selectedTab == .home ? Color("main") : Color("sub"))
+                            .foregroundStyle(selectedTab == .home ? Color("main") : Color("main"))
                     }
                     .frame(maxWidth: .infinity)
                     .contentShape(Rectangle())
+                    .padding(.leading, 38.5)
                 }
                 .buttonStyle(.plain)
 
@@ -48,16 +49,17 @@ struct ITDABottomTabBar: View {
                         Image("book")
                             .resizable()
                             .renderingMode(.template)
-                            .foregroundStyle(selectedTab == .explore ? Color("main") : Color("sub"))
+                            .foregroundStyle(selectedTab == .explore ? Color("sub") : Color("main"))
                             .scaledToFit()
                             .frame(width: 20, height: 20)
 
                         Text("탐색")
                             .font(.custom("Pretendard-Medium", size: 10))
-                            .foregroundStyle(selectedTab == .explore ? Color("main") : Color("sub"))
+                            .foregroundStyle(selectedTab == .explore ? Color("sub") : Color("main"))
                     }
                     .frame(maxWidth: .infinity)
                     .contentShape(Rectangle())
+                    .padding(.horizontal,78.5)
                 }
                 .buttonStyle(.plain)
 
@@ -66,7 +68,7 @@ struct ITDABottomTabBar: View {
                         .resizable()
                         .renderingMode(.original)
                         .scaledToFit()
-                        .frame(width: 34, height: 34)
+                        .frame(width: 20, height: 20)
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.plain)
@@ -88,6 +90,7 @@ struct ITDABottomTabBar: View {
                     }
                     .frame(maxWidth: .infinity)
                     .contentShape(Rectangle())
+                    .padding(.trailing,77)
                 }
                 .buttonStyle(.plain)
 
@@ -98,16 +101,17 @@ struct ITDABottomTabBar: View {
                         Image("user")
                             .resizable()
                             .renderingMode(.template)
-                            .foregroundStyle(selectedTab == .my ? Color("main") : Color("sub"))
+                            .foregroundStyle(selectedTab == .my ? Color("sub") : Color("main"))
                             .scaledToFit()
                             .frame(width: 20, height: 20)
 
                         Text("My")
                             .font(.custom("Pretendard-Medium", size: 10))
-                            .foregroundStyle(selectedTab == .my ? Color("main") : Color("sub"))
+                            .foregroundStyle(selectedTab == .my ? Color("sub") : Color("main"))
                     }
                     .frame(maxWidth: .infinity)
                     .contentShape(Rectangle())
+                    .padding(.trailing, 38.5)
                 }
                 .buttonStyle(.plain)
             }
@@ -122,8 +126,10 @@ struct ITDABottomTabBar: View {
                 .frame(width: 134, height: 5)
                 .padding(.bottom, 8)
         }
-        .frame(height: 124)
+        .frame(height: 100)
         .background(.white)
+        
+        
     }
 }
 
