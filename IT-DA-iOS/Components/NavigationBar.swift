@@ -54,9 +54,8 @@ struct ITDANavigationBar: View {
                     .foregroundStyle(Color("text"))
             }
             .padding(.horizontal, 28)
-            .frame(height: 116)
+            
 
-            ITDALine1()
         }
         .background(.white)
     }
@@ -65,10 +64,10 @@ struct ITDANavigationBar: View {
 struct ITDANavigationBar_Previews: PreviewProvider {
     static var previews: some View {
         VStack(spacing: 0) {
-            ITDANavigationBar(title: "알림", showsBackButton: true, trailingTitle: "전체 읽음 처리")
-            Spacer()
+            ITDANavigationBar(title: "", showsBackButton: true, trailingTitle: "전체 읽음 처리")
+    
         }
-        .frame(width: 393, height: 852)
+        .frame(width: 393, height: 44)
         .background(.white)
     }
 }
