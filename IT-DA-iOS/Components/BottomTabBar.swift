@@ -117,19 +117,9 @@ struct ITDABottomTabBar: View {
             }
             .frame(height: 58)
             .padding(.top, 12)
-            .padding(.horizontal, 25)
-
-            Spacer(minLength: 0)
-
-            Capsule()
-                .fill(Color.black)
-                .frame(width: 134, height: 5)
-                .padding(.bottom, 8)
         }
-        .frame(height: 100)
+        .padding(.horizontal, 25)
         .background(.white)
-        
-        
     }
 }
 

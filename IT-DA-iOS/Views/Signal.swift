@@ -19,7 +19,6 @@ struct Signal : View {
                 showsBackButton: true,
                 trailingTitle: "전체 읽은 처리"
             )
-            .padding(.top, 57.5)
 
             ScrollView {
                 Text(Signaltext)
