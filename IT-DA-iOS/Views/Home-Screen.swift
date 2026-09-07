@@ -10,6 +10,8 @@ struct HomeScreen : View{
     let upexplanation = "Home"
     let joinproject = "참여 중인 프로젝트"
     let alarmcheck = "알림 요약ㆍ확인"
+    let title = "안녕하세요, 000님 👋"
+    let subtitle = "상상은 여기서 현실이 됩니다.\n당신의 프로젝트와 팀을 찾아보세요"
     let chip1 = ""
     let chip2 = ""
     let chip3 =  ""
@@ -20,6 +22,28 @@ struct HomeScreen : View{
                 .font(.custom("Pretendard-Bold", size: 23))
             Image("Line 1")
                 .padding(.top, 18.5)
+            
+            HStack(){
+                Image("Profil")
+                    .frame(alignment:.leading)
+                    .padding(.leading,36.5)
+                VStack(){
+                    Text(title)
+                        .frame(maxWidth: .infinity,alignment: .leading)
+                        .font(.custom("Pretendard-SemilBold",size: 21))
+                        .padding(.bottom,1.5)
+                        .padding(.leading, 12.5)
+                    Text(subtitle)
+                        .frame(maxWidth: .infinity,alignment: .leading)
+                        .font(.custom("Pretendard-Regular",size: 13))
+                        .foregroundStyle(Color("place"))
+                        .padding(.leading,15.5)
+                }
+                
+                
+            }
+            .padding(.top, 34.5)
+            .padding(.bottom, 23.5)
             
             ITDAProjectCard(
                 title: "AI기반 학습 플래너 [0부0부]",
