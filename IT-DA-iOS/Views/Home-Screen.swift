@@ -20,6 +20,7 @@ struct HomeScreen : View{
         ScrollView{
             Text(upexplanation)
                 .font(.custom("Pretendard-Bold", size: 23))
+                .padding(.top,21.5)
             Image("Line 1")
                 .padding(.top, 18.5)
             
@@ -39,11 +40,14 @@ struct HomeScreen : View{
                         .foregroundStyle(Color("place"))
                         .padding(.leading,15.5)
                 }
-                
-                
             }
             .padding(.top, 34.5)
             .padding(.bottom, 23.5)
+            
+            
+            
+            
+        
             
             ITDAProjectCard(
                 title: "AI기반 학습 플래너 [0부0부]",
