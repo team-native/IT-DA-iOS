@@ -14,26 +14,41 @@ struct Status: View{
         VStack(spacing: 0){
             HStack{
                 Text(supporting)
-                    .frame(alignment:.leading)
-                    .padding(.leading, 44.5)
+                    .frame(maxWidth: .infinity)
+                    
                 
                 Text(joining)
-                    .padding(.horizontal, 44.5)
+                    .frame(maxWidth: .infinity)
                 
                 Text(completed)
-                    .padding(.trailing,44.5)
-                    
+                    .frame(maxWidth: .infinity)
             }
+            
             .font(.custom("Pretendard-Regular", size: 16))
             .foregroundStyle(Color("place"))
+            
+            
+            HStack(spacing: 0){
+                Text("3")
+                    .frame(maxWidth: .infinity)
                 
-            .frame(width:342, height: 97)
+                Text("1")
+                    .frame(maxWidth: .infinity)
+                
+                Text("1")
+                    .frame(maxWidth: .infinity)
+            }
+            .padding(.top,14.5)
+            
+        }
+                
+        .frame(width:339, height: 93.5)
             .overlay {
                 RoundedRectangle(cornerRadius: 9)
                     .stroke(Color("off"), lineWidth: 1)
                     
                     
-            }
+            
         }
         
     }
