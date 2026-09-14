@@ -6,21 +6,25 @@
 //
 
 import SwiftUI
+
 struct Status: View{
-    let joining = "참여 중"
-    let supporting = "지원 중"
-    let completed = "완료"
+    var activity1 : String = ""
+    var activity2 : String = ""
+    var activity3 : String = ""
+    var number1 : String = ""
+    var number2 : String = ""
+    var number3 : String = ""
+    
     var body: some View{
         VStack(spacing: 0){
             HStack{
-                Text(supporting)
-                    .frame(maxWidth: .infinity)
-                    
-                
-                Text(joining)
+                Text(activity1)
                     .frame(maxWidth: .infinity)
                 
-                Text(completed)
+                Text(activity2)
+                    .frame(maxWidth: .infinity)
+                
+                Text(activity3)
                     .frame(maxWidth: .infinity)
             }
             
@@ -29,13 +33,13 @@ struct Status: View{
             
             
             HStack(spacing: 0){
-                Text("3")
+                Text(number1)
                     .frame(maxWidth: .infinity)
                 
-                Text("1")
+                Text(number2)
                     .frame(maxWidth: .infinity)
                 
-                Text("1")
+                Text(number3)
                     .frame(maxWidth: .infinity)
             }
             .padding(.top,14.5)
@@ -47,13 +51,19 @@ struct Status: View{
                 RoundedRectangle(cornerRadius: 9)
                     .stroke(Color("off"), lineWidth: 1)
                     
-                    
-            
         }
-        
     }
 }
 
-#Preview{
-    Status()
+struct Status_Previews: PreviewProvider {
+    static var previews: some View {
+        Status(
+            activity1: "지원 중",
+            activity2: "참여 중",
+            activity3: "완료",
+            number1: "3",
+            number2: "1",
+            number3: "1"
+        )
+    }
 }
