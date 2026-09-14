@@ -12,6 +12,7 @@ struct HomeScreen : View{
     let alarmcheck = "알림 요약ㆍ확인"
     let title = "안녕하세요, 000님 👋"
     let subtitle = "상상은 여기서 현실이 됩니다.\n당신의 프로젝트와 팀을 찾아보세요"
+    let recommendation = "추천 프로젝트"
     let chip1 = ""
     let chip2 = ""
     let chip3 =  ""
@@ -45,8 +46,24 @@ struct HomeScreen : View{
             .padding(.bottom, 23.5)
             
             
+            Status(
+                activity1: "지원 중",
+                activity2: "참여 중",
+                activity3: "완료",
+                number1: "3",
+                number2: "1",
+                number3: "1"
+            )
+            .padding(.horizontal,26.5)
             
-                
+            Text(recommendation)
+                .font(.custom("Pretendard-Bold",size : 21))
+                .foregroundStyle(Color("main"))
+                .frame(maxWidth:.infinity,alignment: .leading)
+                .padding(.leading, 26.5)
+                .padding(.top,22.5)
+            
+            
             
         
             
@@ -56,6 +73,8 @@ struct HomeScreen : View{
                 chip1: "Back-End"
             )
             .padding(.horizontal, 26.5)
+            .padding(.top, 12.5)
+            
             ITDAProjectCard(
                 title: "하치와레 키우기 [하키]",
                 subtitle: "프론트엔드 개발자 2명 모집",
