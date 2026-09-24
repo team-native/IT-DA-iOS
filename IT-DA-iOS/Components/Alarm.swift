@@ -17,6 +17,9 @@ struct ITDAAlarm: View{
             Text(subtitle)
                 .font(.custom("Pretendard-Regular", size: 16))
                 .backgroundStyle(Color("dim"))
+            Text(time)
+                .font(.custom("Pretendard-Regular", size: 13))
+                .backgroundStyle(Color("dim"))
             
             
         }
