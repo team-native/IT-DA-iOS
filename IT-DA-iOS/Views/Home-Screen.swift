@@ -109,6 +109,10 @@ struct HomeScreen : View{
             
             VStack(spacing: 0){
                 Text(alarmcheck)
+                    .font(.custom("Pretendard-Bold",size: 21))
+                    .frame(maxWidth: .infinity,alignment: .leading)
+                    .padding(.top,26.5)
+                    .padding(.leading, 26.5)
             }
         }
     }

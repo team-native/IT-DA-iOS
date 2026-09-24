@@ -49,3 +49,4 @@ struct ITDABadge_Previews: PreviewProvider {
         .background(.white)
     }
 }
+
