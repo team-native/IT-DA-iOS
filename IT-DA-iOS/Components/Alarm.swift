@@ -26,6 +26,10 @@ struct ITDAAlarm: View{
                     .padding(.top,8)
                 }
             }
+        HStack(spacing: 0){
+            Image("computer")
+                .padding(.trailing,15)
+        }
         .padding(.horizontal, 18)
             .padding(.vertical, 20)
             .background(.white)
@@ -37,7 +41,7 @@ struct ITDAAlarm: View{
 }
     
     #Preview{
-        VStack(spacing:8){
+        VStack(spacing:6.5){
             ITDAAlarm(
                 subtitle: "지원한 프로젝트에서 새 메시지가 있습니다",
                 time: "2분전"
