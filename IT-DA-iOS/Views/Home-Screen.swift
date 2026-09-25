@@ -111,10 +111,26 @@ struct HomeScreen : View{
                     .padding(.top,26.5)
                     .padding(.leading, 26.5)
             }
-           ITDAAlarm(
-            image: "post",
-            subtitle: "지원한 프로젝트에서 새 메시지가 있습니다",
-            time: "2분전")
+                
+                ITDAAlarm(
+                    image: "post",
+                    subtitle: "지원한 프로젝트에서 새 메시지가 있습니다",
+                    time: "2분전"
+                )
+                .frame(maxWidth:.infinity)
+                .padding(.bottom,6.5)
+                
+                
+                
+                ITDAAlarm(
+                    image: "computer",
+                    subtitle: "백엔드 개발자 1명이 프로젝트에 합류 하였습니다",
+                    time: "2분전"
+                )
+                .frame(maxWidth:.infinity)
+                .padding(.bottom,11.5)
+                
+            
         }
     }
 }
