@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct ITDAAlarm: View{
+    let image : String
     let subtitle : String
     let time : String
     var body : some View {
         HStack(spacing: 0){
-            Image("post")
+            Image(image)
                 .padding(.trailing,15)
             
             VStack(alignment: .leading,spacing:0){
@@ -26,10 +27,6 @@ struct ITDAAlarm: View{
                     .padding(.top,8)
                 }
             }
-        HStack(spacing: 0){
-            Image("computer")
-                .padding(.trailing,15)
-        }
         .padding(.horizontal, 18)
             .padding(.vertical, 20)
             .background(.white)
@@ -43,6 +40,7 @@ struct ITDAAlarm: View{
     #Preview{
         VStack(spacing:6.5){
             ITDAAlarm(
+                image : "post",
                 subtitle: "지원한 프로젝트에서 새 메시지가 있습니다",
                 time: "2분전"
             )
