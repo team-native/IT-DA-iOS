@@ -37,7 +37,8 @@ struct ITDAAlarm: View{
     }
 }
     
-    #Preview{
+struct ITDAAlarm_Previews: PreviewProvider{
+    static var previews: some View{
         VStack(spacing:6.5){
             ITDAAlarm(
                 image : "post",
@@ -46,4 +47,4 @@ struct ITDAAlarm: View{
             )
         }
     }
-
+}

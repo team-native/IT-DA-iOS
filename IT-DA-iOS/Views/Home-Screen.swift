@@ -64,9 +64,6 @@ struct HomeScreen : View{
                 .padding(.top,22.5)
             
             
-            
-        
-            
             ITDAProjectCard(
                 title: "AI기반 학습 플래너 [0부0부]",
                 subtitle: "백앤드 개발자 1명 모집",
@@ -114,6 +111,10 @@ struct HomeScreen : View{
                     .padding(.top,26.5)
                     .padding(.leading, 26.5)
             }
+           ITDAAlarm(
+            image: "post",
+            subtitle: "지원한 프로젝트에서 새 메시지가 있습니다",
+            time: "2분전")
         }
     }
 }
