@@ -13,6 +13,7 @@ struct HomeScreen : View{
     let title = "안녕하세요, 000님 👋"
     let subtitle = "상상은 여기서 현실이 됩니다.\n당신의 프로젝트와 팀을 찾아보세요"
     let recommendation = "추천 프로젝트"
+    let viewalarm = "모든 알림 보기"
     let chip1 = ""
     let chip2 = ""
     let chip3 =  ""
@@ -111,7 +112,7 @@ struct HomeScreen : View{
                     .padding(.top,26.5)
                     .padding(.leading, 26.5)
             }
-                
+            VStack(spacing: 0){
                 ITDAAlarm(
                     image: "post",
                     subtitle: "지원한 프로젝트에서 새 메시지가 있습니다",
@@ -129,8 +130,7 @@ struct HomeScreen : View{
                 )
                 .frame(maxWidth:.infinity)
                 .padding(.bottom,11.5)
-                
-            
+            }
         }
     }
 }
