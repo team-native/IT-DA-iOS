@@ -131,6 +131,12 @@ struct HomeScreen : View{
                 .frame(maxWidth:.infinity)
                 .padding(.bottom,11.5)
             }
+            Text(viewalarm)
+                .underline()
+                .font(.custom("Pretendard-Regular", size: 12))
+                .backgroundStyle(Color("pale"))
+                .frame(maxWidth:.infinity,alignment: .leading)
+                .padding(.leading,26.5)
         }
     }
 }
